@@ -1,0 +1,63 @@
+# TODO: replace all placeholder values with your real CV data.
+# This file uses the rendercv format (see cv_format in _pages/cv.md).
+cv:
+  name: Jiantao Liu
+  label: Researcher # TODO: your title, e.g. PhD Student
+  email: your-email@example.com # TODO
+  location: Zürich, Switzerland
+  image: ""
+  summary: A short one-sentence summary about yourself. # TODO
+
+  social_networks:
+    - network: GitHub
+      username: qianxu1998
+    # - network: LinkedIn
+    #   username: TODO
+
+  sections:
+    Education:
+      - institution: ETH Zürich # TODO
+        location: Zürich, Switzerland
+        url: https://ethz.ch/
+        area: Your Field # TODO
+        studyType: PhD # TODO: degree type
+        start_date: 2024 # TODO
+        end_date: present
+        highlights:
+          - Placeholder highlight (e.g. advisor, thesis topic).
+
+      - institution: Your Previous University # TODO
+        location: City, Country
+        area: Your Field
+        studyType: BSc
+        start_date: 2016
+        end_date: 2020
+        highlights:
+          - Placeholder highlight.
+
+    Experience:
+      - company: Placeholder Company or Lab # TODO
+        position: Placeholder Position
+        location: City, Country
+        start_date: 2023-06
+        end_date: 2023-09
+        summary: One-sentence description of what you did there.
+        highlights:
+          - Placeholder achievement 1.
+          - Placeholder achievement 2.
+
+    Awards:
+      - title: Placeholder Award # TODO
+        date: 2025-01-01
+        awarder: Placeholder Organization
+        summary: One-sentence description of the award.
+
+    Skills:
+      - name: Programming
+        keywords: "Python, C++, Placeholder" # TODO
+
+    Languages:
+      - name: Chinese
+        summary: "Native speaker"
+      - name: English
+        summary: "Fluent"
