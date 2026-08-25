@@ -1,0 +1,7 @@
+{%- comment -%}
+  Overrides the theme's include so the home page lists ALL publications
+  (newest first), not only those marked selected={true}.
+{%- endcomment -%}
+<div class="publications">
+  {% bibliography --group_by none %}
+</div>
