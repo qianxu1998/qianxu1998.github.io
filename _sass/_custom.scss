@@ -9,8 +9,8 @@ $accent: #315866;
   --global-theme-color: #{$accent};
   --global-hover-color: #{$accent};
   --global-code-bg-color: #{rgba($accent, 0.05)};
-  // Warm red used for the **bold** parts of news items, distinct from the accent.
-  --global-news-highlight-color: #b42318;
+  // Color of the **bold** parts of news items (same as the accent).
+  --global-news-highlight-color: #{$accent};
 }
 
 // Dark mode: same hue, lightened so links stay readable on the dark background
@@ -20,7 +20,7 @@ $accent-dark: #639fb4;
 html[data-theme="dark"] {
   --global-theme-color: #{$accent-dark};
   --global-hover-color: #{$accent-dark};
-  --global-news-highlight-color: #ff7b72;
+  --global-news-highlight-color: #{$accent-dark};
 }
 
 // Profile photo on the About page. The theme uses 30% of the content column on
@@ -95,5 +95,27 @@ $profile-width: 22%;
 
   .news-date {
     padding-top: 0;
+  }
+}
+
+// CV page tidy-ups (markup comes from the al_folio_cv gem templates).
+.cv .card {
+  // The entry lists are plain <ul>s with no list-style reset -> stray bullets.
+  ul.list-group {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  // Date badge and location are stacked in a small table that the theme
+  // centers, so badges of different widths get different left edges.
+  .date-column,
+  .date-column td {
+    text-align: left;
+  }
+
+  // The generic markdown-table rule draws a line above every cell.
+  table.table-cv td {
+    border-top: 0;
+    padding-left: 0;
   }
 }

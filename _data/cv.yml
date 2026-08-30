@@ -130,17 +130,17 @@ cv:
         date: 2022-12
         url: https://doi.org/10.1109/ICFPT56656.2022.9974425
 
-    Projects:
-      - name: "Yun — 64-bit RISC-V vector processor, TSMC 65 nm (tape-out 2021)"
-        url: https://github.com/pulp-platform/ara
-        date: 2021
-        summary: First silicon implementation of Ara, the RISC-V Vector extension engine for the CVA6 (Ariane) core.
-        highlights:
-          - Responsible for the backend implementation (synthesis, place & route flow, and DFT).
+    # Projects:
+    #   - name: "Yun — 64-bit RISC-V vector processor, TSMC 65 nm (tape-out 2021)"
+    #     url: https://github.com/pulp-platform/ara
+    #     date: 2021
+    #     summary: First silicon implementation of Ara, the RISC-V Vector extension engine for the CVA6 (Ariane) core.
+    #     highlights:
+    #       - Responsible for the backend implementation (synthesis, place & route flow, and DFT).
 
-      - name: Dynamatic
-        url: https://github.com/EPFL-LAP/dynamatic
-        summary: Developer of Dynamatic, an open-source MLIR-based HLS compiler that produces dynamically scheduled dataflow circuits from C/C++ code.
+    #   - name: Dynamatic
+    #     url: https://github.com/EPFL-LAP/dynamatic
+    #     summary: Developer of Dynamatic, an open-source MLIR-based HLS compiler that produces dynamically scheduled dataflow circuits from C/C++ code.
 
     Professional Service:
       - bullet: "Journal reviewer: IEEE TCAD, IEEE TPDS."
