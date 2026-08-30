@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: <sup>*</sup> denotes co-first authorship (equal contribution).
+title: Publications
+description: <sup>*</sup> Denotes co-first authorship (equal contribution).
 nav: true
 nav_order: 2
 ---

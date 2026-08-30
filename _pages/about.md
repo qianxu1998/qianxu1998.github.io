@@ -1,17 +1,17 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='https://ethz.ch/'>ETH Zürich</a>. # TODO: your affiliation, address, or motto
+# subtitle: <a href='https://ethz.ch/'>ETH Zürich</a>. # TODO: your affiliation, address, or motto
 
 profile:
   align: right
   image: prof_pic.jpg # TODO: replace assets/img/prof_pic.jpg with your own photo
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Office TODO</p>
-    <p>Street TODO</p>
-    <p>Zürich, Switzerland</p>
+  image_circular: true # crops the image to make it circular
+  # more_info: >
+  #   <p>Office TODO</p>
+  #   <p>Street TODO</p>
+  #   <p>Zürich, Switzerland</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,10 +27,10 @@ latest_posts:
   limit: 3
 ---
 
-<!-- TODO: replace everything below with your real biography. -->
+I am Jiantao Liu, a third-year Ph.D. student at **ETH Zürich**, supervisied by Prof. Dr. Lana Jospović. My research interests include *High-Level Synthesis (HLS)*, *Process-in-Memory (PIM)*, and *Electronic Design Automation (EDA)*, with a broder focus on computer architecture and efficient computing systems.
 
-I am Jiantao Liu, a researcher at **ETH Zürich** <!-- TODO: your actual position and group -->. My research interests include *topic one*, *topic two*, and *topic three* <!-- TODO -->.
+I received my Master's degree from ETH Zürich and my Bachelor's degree from Huazhong University of Science and Technology.
 
-Before that, I received my Bachelor's degree from *University TODO* in *Year TODO*. <!-- TODO: previous education / experience -->
+I am currently a research intern with the CPU Architecture Team at Huawei Hong Kong Research Center (HKRC), where I work on system performance engineering, including evaluating the impact of new Arm ISA extensions and Scalable Matrix Extension (SME) on computational kernels, as well as analyzing agentic AI workloads for next-generation CPU architectures.
 
-Feel free to reach out via email or check out my [publications](/publications/) and [CV](/cv/).
+Feel free to reach out via email.

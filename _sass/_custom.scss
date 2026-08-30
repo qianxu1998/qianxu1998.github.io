@@ -1,0 +1,99 @@
+/*******************************************************************************
+ * Site-specific overrides, loaded last from assets/css/main.scss.
+ * Only the tokens that differ from the al_folio_core defaults live here.
+ ******************************************************************************/
+// Accent color used for links, nav highlights, buttons and venue badges.
+$accent: #315866;
+
+:root {
+  --global-theme-color: #{$accent};
+  --global-hover-color: #{$accent};
+  --global-code-bg-color: #{rgba($accent, 0.05)};
+  // Warm red used for the **bold** parts of news items, distinct from the accent.
+  --global-news-highlight-color: #b42318;
+}
+
+// Dark mode: same hue, lightened so links stay readable on the dark background
+// (= $accent with lightness +25%, i.e. color.adjust($accent, $lightness: 25%)).
+$accent-dark: #639fb4;
+
+html[data-theme="dark"] {
+  --global-theme-color: #{$accent-dark};
+  --global-hover-color: #{$accent-dark};
+  --global-news-highlight-color: #ff7b72;
+}
+
+// Profile photo on the About page. The theme uses 30% of the content column on
+// screens >= 576px and the full width on phones; shrink both a little.
+$profile-width: 22%;
+
+@media (min-width: 576px) {
+  .profile {
+    width: $profile-width;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+  }
+}
+
+// News list (markup in _includes/news.liquid): date column + text, thin divider
+// between items, **bold** parts highlighted in the accent color.
+.news-list {
+  margin-top: 0.25rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  column-gap: 1.5rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.news-date {
+  padding-top: 0.15rem;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.45;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.news-content {
+  min-width: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+
+  strong,
+  b {
+    color: var(--global-news-highlight-color);
+    font-weight: 600;
+  }
+
+  img.emoji {
+    vertical-align: text-bottom;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    row-gap: 0.25rem;
+    padding: 0.85rem 0;
+  }
+
+  .news-date {
+    padding-top: 0;
+  }
+}
