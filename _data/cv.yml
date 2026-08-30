@@ -1,63 +1,158 @@
-# TODO: replace all placeholder values with your real CV data.
-# This file uses the rendercv format (see cv_format in _pages/cv.md).
+# CV data in the rendercv format (see cv_format in _pages/cv.md).
+# Section titles matter: Education, Experience, Publications, Awards, Projects,
+# Skills and Languages use dedicated templates; any other title renders its
+# entries as plain bullets (`- bullet: ...`). Sections appear in this order,
+# except Experience, which the theme always shows first.
 cv:
   name: Jiantao Liu
-  label: Researcher # TODO: your title, e.g. PhD Student
-  email: your-email@example.com # TODO
-  location: Zürich, Switzerland
+  label: Ph.D. Student, ETH Zürich
+  email: jianliu@ethz.ch
+  address:
+    city: Zürich
+    region: Switzerland
+  website: https://qianxu1998.github.io
   image: ""
-  summary: A short one-sentence summary about yourself. # TODO
+  summary: >-
+    Ph.D. student in the [DYNAMO group](https://dynamo.ethz.ch/) at ETH Zürich, advised by
+    Prof. Dr. Lana Josipović. My research spans high-level synthesis, processing-in-memory,
+    and electronic design automation, with a broader interest in computer architecture and
+    efficient computing systems.
 
   social_networks:
     - network: GitHub
       username: qianxu1998
-    # - network: LinkedIn
-    #   username: TODO
+    - network: LinkedIn
+      username: jiantao-liu-873b5216b
 
   sections:
+    Experience:
+      - company: Huawei Hong Kong Research Center (HKRC)
+        position: Research Intern, CPU Architecture Team
+        location: Hong Kong
+        start_date: 2026-05
+        end_date: present
+        summary: System performance engineering for next-generation CPU architectures.
+        highlights:
+          - Evaluating the impact of new Arm ISA extensions and the Scalable Matrix Extension (SME) on computational kernels.
+          - Analyzing agentic AI workloads to guide next-generation CPU architecture design.
+
+      - company: DYNAMO group, ETH Zürich
+        position: Teaching Assistant
+        location: Zürich, Switzerland
+        date: 2024-02
+        summary: "*Synthesis of Digital Circuits* (Spring 2024)."
+
     Education:
-      - institution: ETH Zürich # TODO
+      - institution: ETH Zürich
         location: Zürich, Switzerland
         url: https://ethz.ch/
-        area: Your Field # TODO
-        studyType: PhD # TODO: degree type
-        start_date: 2024 # TODO
+        area: Electrical Engineering and Information Technology
+        studyType: Ph.D.
+        start_date: 2023-10
         end_date: present
         highlights:
-          - Placeholder highlight (e.g. advisor, thesis topic).
+          - "Advisor: Prof. Dr. Lana Josipović ([DYNAMO group](https://dynamo.ethz.ch/))."
+          - "Research focus: processing-in-memory, electronic design automation, tensor kernel mapping."
 
-      - institution: Your Previous University # TODO
-        location: City, Country
-        area: Your Field
-        studyType: BSc
-        start_date: 2016
-        end_date: 2020
+      - institution: University of California San Diego
+        location: San Diego, U.S.A.
+        url: https://ucsd.edu/
+        area: Computer Engineering
+        studyType: Ph.D. (transferred to ETH Zürich)
+        start_date: 2022-09
+        end_date: 2023-06
         highlights:
-          - Placeholder highlight.
+          - "GPA: 4.0/4.0."
 
-    Experience:
-      - company: Placeholder Company or Lab # TODO
-        position: Placeholder Position
-        location: City, Country
-        start_date: 2023-06
-        end_date: 2023-09
-        summary: One-sentence description of what you did there.
+      - institution: ETH Zürich
+        location: Zürich, Switzerland
+        url: https://ethz.ch/
+        area: Electrical Engineering and Information Technology
+        studyType: M.Sc.
+        start_date: 2020-09
+        end_date: 2022-09
         highlights:
-          - Placeholder achievement 1.
-          - Placeholder achievement 2.
+          - "GPA: 5.25/6.00."
+
+      - institution: Huazhong University of Science and Technology
+        location: Wuhan, China
+        url: https://www.hust.edu.cn/
+        area: Electrical and Electronics Engineering
+        studyType: B.Eng.
+        start_date: 2016-09
+        end_date: 2020-06
+        highlights:
+          - "GPA: 3.92/4.00."
 
     Awards:
-      - title: Placeholder Award # TODO
-        date: 2025-01-01
-        awarder: Placeholder Organization
-        summary: One-sentence description of the award.
+      - title: Best Student Paper Award
+        date: 2026-06
+        awarder: International Workshop on Logic and Synthesis (IWLS 2026)
+        summary: "For *GLOW: Glitch Optimization with Retiming for Low Power*."
+
+      - title: Distinguished Artifact Award
+        date: 2025-06
+        awarder: International Symposium on Computer Architecture (ISCA 2025)
+        summary: "For *OptiPIM: Optimizing Processing In-Memory Acceleration Using Integer Linear Programming*."
+
+    Publications:
+      - title: "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing near Memory"
+        publisher: "Chien-Yi Yang*, Jiantao Liu*, Yue Pan, et al. — MICRO 2026 (to appear)"
+        date: 2026-10
+
+      - title: "GLOW: Glitch Optimization with Retiming for Low Power"
+        publisher: "Jiantao Liu*, Carmine Rizzi*, Pravriti Jaipuriyar, et al. — ICCAD 2026 (to appear)"
+        date: 2026-11
+
+      - title: "GLOW: Glitch Optimization with Retiming for Low Power"
+        publisher: "Jiantao Liu*, Carmine Rizzi*, Pravriti Jaipuriyar, et al. — IWLS 2026"
+        date: 2026-06
+        summary: "**Best Student Paper Award.**"
+
+      - title: "OptiPIM: Optimizing Processing In-Memory Acceleration Using Integer Linear Programming"
+        publisher: "Jiantao Liu, Minxuan Zhou, Yue Pan, Chien-Yi Yang, Lana Josipović, and Tajana Rosing — ISCA 2025"
+        date: 2025-06
+        url: https://doi.org/10.1145/3695053.3731041
+        summary: "**Distinguished Artifact Award.**"
+
+      - title: "Fast Switching Activity Estimation for HLS-Produced Dataflow Circuits"
+        publisher: "Jiantao Liu, Maksymilian Graczyk, Andrea Guerrieri, and Lana Josipović — FPL 2024"
+        date: 2024-09
+        url: https://doi.org/10.1109/FPL64840.2024.00025
+
+      - title: "Yun: An Open-Source, 64-Bit RISC-V-Based Vector Processor With Multi-Precision Integer and Floating-Point Support in 65-nm CMOS"
+        publisher: "Matteo Perotti, Matheus A. Cavalcante, Alessandro Ottaviano, Jiantao Liu, and Luca Benini — IEEE TCAS-II, 2023"
+        date: 2023-10
+        url: https://doi.org/10.1109/TCSII.2023.3292579
+
+      - title: "Load-Store Queue Sizing for Efficient Dataflow Circuits"
+        publisher: "Jiantao Liu, Carmine Rizzi, and Lana Josipović — FPT 2022"
+        date: 2022-12
+        url: https://doi.org/10.1109/ICFPT56656.2022.9974425
+
+    Projects:
+      - name: "Yun — 64-bit RISC-V vector processor, TSMC 65 nm (tape-out 2021)"
+        url: https://github.com/pulp-platform/ara
+        date: 2021
+        summary: First silicon implementation of Ara, the RISC-V Vector extension engine for the CVA6 (Ariane) core.
+        highlights:
+          - Responsible for the backend implementation (synthesis, place & route flow, and DFT).
+
+      - name: Dynamatic
+        url: https://github.com/EPFL-LAP/dynamatic
+        summary: Developer of Dynamatic, an open-source MLIR-based HLS compiler that produces dynamically scheduled dataflow circuits from C/C++ code.
+
+    Professional Service:
+      - bullet: "Journal reviewer: IEEE TCAD, IEEE TPDS."
 
     Skills:
-      - name: Programming
-        keywords: "Python, C++, Placeholder" # TODO
+      - name: Programming & HDLs
+        keywords: [C/C++, Python, OCaml, SQL, P4, Scala, SystemVerilog, Chisel, HTML, LabVIEW, PyTorch, TensorFlow]
+      - name: Tools
+        keywords: [LLVM, MLIR, Synopsys Design Compiler, Fusion Compiler, Vivado, Vitis, Cadence Genus, Innovus, Joules, Calibre, OpenROAD, MySQL, MongoDB, Docker, OpenCV, Cerebras SDK]
 
     Languages:
       - name: Chinese
-        summary: "Native speaker"
+        summary: Native speaker
       - name: English
-        summary: "Fluent"
+        summary: Fluent
