@@ -14,9 +14,8 @@ cv:
   image: ""
   summary: >-
     Ph.D. student in the [DYNAMO group](https://dynamo.ethz.ch/) at ETH Zürich, advised by
-    Prof. Dr. Lana Josipović. My research spans high-level synthesis, processing-in-memory,
-    and electronic design automation, with a broader interest in computer architecture and
-    efficient computing systems.
+    Prof. Dr. Lana Josipović. My research focuses on computer architecture, electronic design
+    automation, and efficient computing systems.
 
   social_networks:
     - network: GitHub
@@ -28,19 +27,13 @@ cv:
     Experience:
       - company: Huawei Hong Kong Research Center (HKRC)
         position: Research Intern, CPU Architecture Team
-        location: Hong Kong
-        start_date: 2026-05
-        end_date: present
-        summary: System performance engineering for next-generation CPU architectures.
+        location: Hong Kong, China
+        start_date: 2026-04
+        end_date: 2026-10
+        summary: System performance engineering for next-generation CPU architectures, focusing on computational-kernel analysis and architectural evaluation.
         highlights:
           - Evaluating the impact of new Arm ISA extensions and the Scalable Matrix Extension (SME) on computational kernels.
-          - Analyzing agentic AI workloads to guide next-generation CPU architecture design.
-
-      - company: DYNAMO group, ETH Zürich
-        position: Teaching Assistant
-        location: Zürich, Switzerland
-        date: 2024-02
-        summary: "*Synthesis of Digital Circuits* (Spring 2024)."
+          - Analyzing agentic AI workloads to identify performance opportunities for future CPUs.
 
     Education:
       - institution: ETH Zürich
@@ -52,7 +45,7 @@ cv:
         end_date: present
         highlights:
           - "Advisor: Prof. Dr. Lana Josipović ([DYNAMO group](https://dynamo.ethz.ch/))."
-          - "Research focus: processing-in-memory, electronic design automation, tensor kernel mapping."
+          - "Research focus: computer architecture, electronic design automation, and efficient computing systems."
 
       - institution: University of California San Diego
         location: San Diego, U.S.A.
@@ -96,16 +89,17 @@ cv:
         summary: "For *OptiPIM: Optimizing Processing In-Memory Acceleration Using Integer Linear Programming*."
 
     Publications:
-      - title: "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing near Memory"
-        publisher: "Chien-Yi Yang*, Jiantao Liu*, Yue Pan, et al. — MICRO 2026 (to appear)"
-        date: 2026-10
-
       - title: "GLOW: Glitch Optimization with Retiming for Low Power"
-        publisher: "Jiantao Liu*, Carmine Rizzi*, Pravriti Jaipuriyar, et al. — ICCAD 2026 (to appear)"
+        publisher: "Jiantao Liu, Carmine Rizzi, Pravriti Jaipuriyar, Ulrike Schorr, Sascha Richter, Ankush Sood, and Lana Josipović — ICCAD 2026 (to appear)"
         date: 2026-11
 
+      - title: "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing Near Memory"
+        publisher: "Chien-Yi Yang, Jiantao Liu, Yue Pan, Tajana Rosing, Minxuan Zhou, and Lana Josipović — MICRO 2026 (to appear)"
+        date: 2026-10
+        summary: "Chien-Yi Yang and Jiantao Liu contributed equally (co-first authors)."
+
       - title: "GLOW: Glitch Optimization with Retiming for Low Power"
-        publisher: "Jiantao Liu*, Carmine Rizzi*, Pravriti Jaipuriyar, et al. — IWLS 2026"
+        publisher: "Jiantao Liu, Carmine Rizzi, Pravriti Jaipuriyar, Ulrike Schorr, Sascha Richter, Ankush Sood, and Lana Josipović — IWLS 2026"
         date: 2026-06
         summary: "**Best Student Paper Award.**"
 
@@ -130,20 +124,21 @@ cv:
         date: 2022-12
         url: https://doi.org/10.1109/ICFPT56656.2022.9974425
 
-    # Projects:
-    #   - name: "Yun — 64-bit RISC-V vector processor, TSMC 65 nm (tape-out 2021)"
-    #     url: https://github.com/pulp-platform/ara
-    #     date: 2021
-    #     summary: First silicon implementation of Ara, the RISC-V Vector extension engine for the CVA6 (Ariane) core.
-    #     highlights:
-    #       - Responsible for the backend implementation (synthesis, place & route flow, and DFT).
+    Projects:
+      - name: "Yun — 64-bit RISC-V vector processor, TSMC 65 nm (tape-out 2021)"
+        url: https://github.com/pulp-platform/ara
+        date: 2021
+        summary: First silicon implementation of Ara, the RISC-V Vector extension engine for the CVA6 (Ariane) core.
+        highlights:
+          - Responsible for backend implementation, including synthesis, place and route, and design for test (DFT).
 
-    #   - name: Dynamatic
-    #     url: https://github.com/EPFL-LAP/dynamatic
-    #     summary: Developer of Dynamatic, an open-source MLIR-based HLS compiler that produces dynamically scheduled dataflow circuits from C/C++ code.
+      - name: Dynamatic
+        url: https://github.com/EPFL-LAP/dynamatic
+        summary: Developer of an open-source MLIR-based HLS compiler that produces dynamically scheduled dataflow circuits from C/C++ code.
 
-    Professional Service:
-      - bullet: "Journal reviewer: IEEE TCAD, IEEE TPDS."
+    Teaching Experience & Professional Service:
+      - bullet: "Teaching Assistant: *Synthesis of Digital Circuits* (Spring 2024), ETH Zürich."
+      - bullet: "Journal reviewer: IEEE TCAD, IEEE TPDS, ACM TODAES."
 
     Skills:
       - name: Programming & HDLs
