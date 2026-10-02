@@ -27,7 +27,7 @@ latest_posts:
   limit: 3
 ---
 
-I am Jiantao Liu, a third-year Ph.D. student at **ETH Zürich**, supervisied by Prof. Dr. Lana Jospović. My research interests include *High-Level Synthesis (HLS)*, *Process-in-Memory (PIM)*, and *Electronic Design Automation (EDA)*, with a broder focus on computer architecture and efficient computing systems.
+I am Jiantao Liu, a third-year Ph.D. student at **ETH Zürich**, supervised by Prof. Dr. Lana Josipović. My research interests include *High-Level Synthesis (HLS)*, *Process-in-Memory (PIM)*, and *Electronic Design Automation (EDA)*, with a broader focus on computer architecture and efficient computing systems.
 
 I received my Master's degree from ETH Zürich and my Bachelor's degree from Huazhong University of Science and Technology.
 
