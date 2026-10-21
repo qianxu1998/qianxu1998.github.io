@@ -94,7 +94,7 @@ cv:
         date: 2026-11
 
       - title: "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing Near Memory"
-        publisher: "Chien-Yi Yang, Jiantao Liu, Yue Pan, Tajana Rosing, Minxuan Zhou, and Lana Josipović — MICRO 2026 (to appear)"
+        publisher: "Jiantao Liu, Chien-Yi Yang, Yue Pan, Tajana Rosing, Minxuan Zhou, and Lana Josipović — MICRO 2026 (to appear)"
         date: 2026-10
         summary: "Chien-Yi Yang and Jiantao Liu contributed equally (co-first authors)."
 
